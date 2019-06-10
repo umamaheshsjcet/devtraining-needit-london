@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="needitumamahesh" max_length="40" name="x_58872_needit_needitumamahesh" type="collection">
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requestedfor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HUMAN RESOURCE" sequence="0" value="human resource"/>
+                <element inactive_on_update="false" label="FACILITIES" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="LEGAL" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="YOUR DEPARTMENT CHOICE" sequence="3" value="your department choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="WHAT_NEEDED" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human reource1" sequence="0" value="human reource1"/>
+                <element inactive_on_update="false" label="human reource2" sequence="1" value="human reource2"/>
+                <element inactive_on_update="false" label="facilities1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="legal1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="your department1" sequence="6" value="your department1"/>
+                <element inactive_on_update="false" label="your department2" sequence="7" value="your department2"/>
+            </choice>
+        </element>
+        <element label="when needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
